@@ -15,13 +15,3 @@ class ViewController: UIViewController {
     }
     
 }
-// MARK: - UITableViewDelegate
-extension PlayerDetailsViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 {
-            nameTextField.becomeFirstResponder()
-        }
-    }
-}
-

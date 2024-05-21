@@ -262,6 +262,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="GA4-N3-RV7" kind="unwind" identifier="SaveSelectedGame" unwindAction="unwindWithSelectedGameWithSegue:" id="Nl6-qh-xyk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -272,6 +275,7 @@
                     <navigationItem key="navigationItem" id="AGA-Bb-QNQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REt-mZ-QVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GA4-N3-RV7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3864" y="-562"/>
         </scene>

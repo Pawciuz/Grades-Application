@@ -9,6 +9,7 @@ import UIKit
 
 class GamePickerViewController: UITableViewController {
 
+    // MARK: - Properties
     var games = [
         "Angry Birds",
         "Szachy",
@@ -19,6 +20,17 @@ class GamePickerViewController: UITableViewController {
         "Hill Climb Racing",
         "Pou"
     ]
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "SaveSelectedGame",
+              let cell = sender as? UITableViewCell,
+              let indexPath = tableView.indexPath(for: cell) else {
+            return
+        }
+        
+        let index = indexPath.row
+        selectedGame = games[index]
+    }
     var selectedGame: String? {
         didSet {
             if let selectedGame = selectedGame,
