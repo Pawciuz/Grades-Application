@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E55C72AE2BFC8527008A7D8B /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C72AD2BFC8527008A7D8B /* PlayerDetailsViewController.swift */; };
 		E5B3F4902BF3496F0068E1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3F48F2BF3496F0068E1A1 /* AppDelegate.swift */; };
 		E5B3F4922BF3496F0068E1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3F4912BF3496F0068E1A1 /* SceneDelegate.swift */; };
 		E5B3F4942BF3496F0068E1A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3F4932BF3496F0068E1A1 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E55C72AD2BFC8527008A7D8B /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 		E5B3F48C2BF3496F0068E1A1 /* Oceny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oceny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B3F48F2BF3496F0068E1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B3F4912BF3496F0068E1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				E5B3F4982BF349700068E1A1 /* Assets.xcassets */,
 				E5B3F49A2BF349700068E1A1 /* LaunchScreen.storyboard */,
 				E5B3F49D2BF349700068E1A1 /* Info.plist */,
+				E55C72AD2BFC8527008A7D8B /* PlayerDetailsViewController.swift */,
 			);
 			path = Oceny;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55C72AE2BFC8527008A7D8B /* PlayerDetailsViewController.swift in Sources */,
 				E5B3F4942BF3496F0068E1A1 /* ViewController.swift in Sources */,
 				E5B3F4AA2BF350220068E1A1 /* SampleData.swift in Sources */,
 				E5B3F4AE2BF356500068E1A1 /* PlayerCell.swift in Sources */,
