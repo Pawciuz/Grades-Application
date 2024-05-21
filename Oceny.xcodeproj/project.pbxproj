@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E55C72AE2BFC8527008A7D8B /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C72AD2BFC8527008A7D8B /* PlayerDetailsViewController.swift */; };
+		E55C72B02BFC8E1B008A7D8B /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C72AF2BFC8E1B008A7D8B /* GamePickerViewController.swift */; };
 		E5B3F4902BF3496F0068E1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3F48F2BF3496F0068E1A1 /* AppDelegate.swift */; };
 		E5B3F4922BF3496F0068E1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3F4912BF3496F0068E1A1 /* SceneDelegate.swift */; };
 		E5B3F4942BF3496F0068E1A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3F4932BF3496F0068E1A1 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E55C72AD2BFC8527008A7D8B /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		E55C72AF2BFC8E1B008A7D8B /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 		E5B3F48C2BF3496F0068E1A1 /* Oceny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oceny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B3F48F2BF3496F0068E1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B3F4912BF3496F0068E1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				E5B3F4912BF3496F0068E1A1 /* SceneDelegate.swift */,
 				E5B3F4932BF3496F0068E1A1 /* ViewController.swift */,
 				E5B3F4952BF3496F0068E1A1 /* Main.storyboard */,
+				E55C72AF2BFC8E1B008A7D8B /* GamePickerViewController.swift */,
 				E5B3F4AD2BF356500068E1A1 /* PlayerCell.swift */,
 				E5B3F4A92BF350220068E1A1 /* SampleData.swift */,
 				E5B3F4A72BF34FEF0068E1A1 /* Player.swift */,
@@ -161,6 +164,7 @@
 				E5B3F4902BF3496F0068E1A1 /* AppDelegate.swift in Sources */,
 				E5B3F4A82BF34FEF0068E1A1 /* Player.swift in Sources */,
 				E5B3F4922BF3496F0068E1A1 /* SceneDelegate.swift in Sources */,
+				E55C72B02BFC8E1B008A7D8B /* GamePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
