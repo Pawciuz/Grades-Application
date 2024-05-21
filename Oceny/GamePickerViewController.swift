@@ -19,6 +19,17 @@ class GamePickerViewController: UITableViewController {
         "Hill Climb Racing",
         "Pou"
     ]
+    var selectedGame: String? {
+        didSet {
+            if let selectedGame = selectedGame,
+               let index = games.index(of: selectedGame) {
+                selectedGameIndex = index
+            }
+        }
+    }
+    
+    
+    var selectedGameIndex: Int?
 }
 extension GamePickerViewController {
     
@@ -29,9 +40,35 @@ extension GamePickerViewController {
     
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "GameCell", for: indexPath)
         cell.textLabel?.text = games[indexPath.row]
+        
+        if indexPath.row == selectedGameIndex {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
+    }
+}
+extension GamePickerViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Inny wiersz jest wybrany – należy go odznaczyć
+        if let index = selectedGameIndex {
+            let cell = tableView.cellForRow(at: IndexPath(row: index, section: 0))
+            cell?.accessoryType = .none
+        }
+        
+        selectedGame = games[indexPath.row]
+        
+        // aktualizacja zaznaczenia dla obecnego wiersza
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.accessoryType = .checkmark
     }
 }
 
