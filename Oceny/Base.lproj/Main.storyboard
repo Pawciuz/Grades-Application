@@ -353,7 +353,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Kb6-Pw-kFm" kind="show" id="sII-OG-NZU"/>
+                                            <segue destination="Kb6-Pw-kFm" kind="show" identifier="PickGame" id="sII-OG-NZU"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

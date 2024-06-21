@@ -84,7 +84,6 @@ extension PlayersViewController {
             completionHandler(true)
         }
         editAction.backgroundColor = .blue
-        print(indexPath.row)
         
         let configuration = UISwipeActionsConfiguration(actions: [editAction])
         configuration.performsFirstActionWithFullSwipe = false

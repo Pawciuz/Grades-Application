@@ -58,6 +58,7 @@ extension PlayerDetailsViewController {
         if let gamePickerViewController = segue.source as? GamePickerViewController,
            let selectedGame = gamePickerViewController.selectedGame {
             game = selectedGame
+            player?.game = selectedGame
         }
     }
 }

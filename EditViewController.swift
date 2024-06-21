@@ -12,7 +12,7 @@ class EditViewController: UITableViewController {
     var playerIndex: Int?
     
     
-    var game: String = "Szachy" {
+    var game: String? {
         didSet {
             detailLabel.text = game
         }
@@ -26,6 +26,9 @@ class EditViewController: UITableViewController {
         super.viewDidLoad()
         nameTextField.text = player?.name
         detailLabel.text = player?.game
+        if((player?.game) != nil){
+            game = player?.game
+        }
     }
 
    
@@ -38,7 +41,7 @@ class EditViewController: UITableViewController {
         }
         if segue.identifier == "PickGame",
            let gamePickerViewController = segue.destination as? GamePickerViewController {
-            gamePickerViewController.selectedGame = player?.game
+            gamePickerViewController.selectedGame = game
         }
     }
 }

@@ -11,12 +11,14 @@ class GamePickerViewController: UITableViewController {
 
     // MARK: - Properties
     var games = [
+        "Klocki",
+        "Tetris",
         "Angry Birds",
         "Szachy",
         "Rosyjska Ruletka",
-        "Warcaby",
         "Poker",
         "Kółko i Krzyżyk",
+        "Statki",
         "Hill Climb Racing",
         "Pou"
     ]
@@ -27,14 +29,13 @@ class GamePickerViewController: UITableViewController {
               let indexPath = tableView.indexPath(for: cell) else {
             return
         }
-        
         let index = indexPath.row
         selectedGame = games[index]
     }
     var selectedGame: String? {
         didSet {
             if let selectedGame = selectedGame,
-               let index = games.index(of: selectedGame) {
+               let index = games.firstIndex(of: selectedGame) {
                 selectedGameIndex = index
             }
         }
